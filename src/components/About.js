@@ -1,4 +1,5 @@
 import React from 'react'
+import { Link } from 'react-router-dom'
 
 export default function About() {
     return(
@@ -6,7 +7,7 @@ export default function About() {
             <h1 className="aboutTitle mb-5">About The Dev Team</h1>
             <div className="aboutPage">
                 <div className="member">
-                    <h3>Josh Danao</h3>
+                <Link className="navbar-brand" to="https://www.linkedin.com/in/nick-hvattum-0008a417b/"><h3>Josh Danao</h3></Link>   
                     <img className="aboutImg" src="https://ca.slack-edge.com/T0351JZQ0-U011SC6GRMK-b7744c409e1e-512" />
                     <h5>Frontend Development</h5>
                 </div>
