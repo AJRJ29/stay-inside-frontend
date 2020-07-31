@@ -1,7 +1,6 @@
 import React, { useState, useEffect } from 'react'
 import DeleteComment from '../comments/DeleteComment'
 import axios from 'axios'
-import UpdateComment from '../comments/UpdateComment'
 import { Card } from 'react-bootstrap'
 import UpdateDropDown from './UpdateDropDown'
 
