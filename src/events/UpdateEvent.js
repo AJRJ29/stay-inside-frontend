@@ -22,11 +22,11 @@ const CreateEvent = (props) => {
         console.log("😆")
         console.log(updateEventInputs)
         window.location.reload()
-        axios.put(`http://localhost:3000/events/${props.id}`, updateEventInputs)
+        axios.put(`${process.env.REACT_APP_API}/events/${props.id}`, updateEventInputs)
             .then(response => {
                 if (response.status === 200) {
                     setUpdateEventCreated(true)
-                    window.location.reload(true)
+                    window.location.reload()
                     // console.log(eventCreated)
                     // console.log(eventInputs)
                     {console.log("⏰" )}

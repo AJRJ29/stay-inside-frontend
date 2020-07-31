@@ -23,7 +23,7 @@ const CreateEvent = (props) => {
         console.log("😆")
         console.log(eventInputs)
 
-        axios.post('http://localhost:3000/events/create', eventInputs)
+        axios.post(`${process.env.REACT_APP_API}/events/create`, eventInputs)
             .then(response => {
                 if (response.status === 200) {
                     setEventCreated(true)
