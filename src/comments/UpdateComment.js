@@ -9,7 +9,8 @@ export default function NewComment(props) {
     content: '',
   })
 
-  let handleUpdateComment = e => { 
+  let handleUpdateComment = e => {
+    // window.location.reload(); 
     e.preventDefault()
       axios.put(`${process.env.REACT_APP_API}/comments/${props.id}`, inputs)
       .then(response => {
@@ -33,17 +34,20 @@ export default function NewComment(props) {
   }
 
   return (
-    <form onSubmit={handleUpdateComment}>
-      <div class="form-group">
-        <label for="exampleFormControlTextarea1">Comment</label>
-        <input type="text" name='content' class="form-control" id="exampleFormControlInput1" onChange={handleInputChange} />
-      </div>
-      <div class="form-group">
-        <input hidden type="text" name='eventId' class="form-control" id="exampleFormControlInput1" value={props.id} onChange={handleInputChange} />
-      </div>
-      <Button  className='btn' type='submit'>
-        Submit
-      </Button>
-    </form>
+  <form onSubmit={handleUpdateComment}>
+    <div class="form-group">
+      <label for="exampleFormControlTextarea1">Comment</label>
+      <input type="text" name='content' class="form-control" id="exampleFormControlInput1" onChange={handleInputChange} />
+    </div>
+    <div class="form-group">
+      <input hidden type="text" name='eventId' class="form-control" id="exampleFormControlInput1" value={props.id} onChange={handleInputChange} />
+    </div>
+    <Button  className='btn' type='submit'>
+      Submit
+    </Button>
+  </form>
   )
 }
+
+
+  
