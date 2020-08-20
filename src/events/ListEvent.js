@@ -6,8 +6,7 @@ import DeleteEvent from '../events/DeleteEvent'
 
 export default function ListEvent({user, event})  {
     const [newComment, setNewComment] = useState(false)
-
-
+    
         return (
             <Card className='shadow-lg p-0 mb-5 bg-white'>
             <Card.Header className='bg-light p-1'>
