@@ -5,7 +5,7 @@ import { Button } from 'react-bootstrap';
 export default function DeleteComment(props) {
   const handleDelete = e => {
     e.preventDefault()
-    window.location.reload(true)
+    // window.location.reload(true)
     axios.delete(`${process.env.REACT_APP_API}/comments/${props.id}`)
     .then(response => {
         console.log(response)
@@ -15,6 +15,8 @@ export default function DeleteComment(props) {
       console.log(err)
     })
   }
+
+  console.log(props.user.id)
 
   if (props.user.id === props.commentUser) {
     return (

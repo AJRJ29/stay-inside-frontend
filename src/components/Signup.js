@@ -49,8 +49,8 @@ const Signup = () => {
 
     return (
       <div className="row mt-4">
-        <div className="col-md-7 offset-md-3">
-          <div className="card card-body">
+        <div className="col-md-7 mb-3 offset-md-3">
+          <div className="card card-body mb-3">
             <h2 className="py-2">Signup</h2>
             <form method="post" onSubmit={handleSubmit}>
               <div className="form-group">

@@ -9,8 +9,7 @@ export default function NewComment(props) {
     content: '',
   })
 
-  let handleUpdateComment = e => {
-    window.location.reload(); 
+  let handleUpdateComment = e => { 
     e.preventDefault()
       axios.put(`${process.env.REACT_APP_API}/comments/${props.id}`, inputs)
       .then(response => {
@@ -27,6 +26,10 @@ export default function NewComment(props) {
   const handleInputChange = e => {
     e.persist()
     setInputs({...inputs, [e.target.name]: e.target.value})
+  }
+
+  if (updateComment) {
+    return <Redirect to='/' />
   }
 
   return (

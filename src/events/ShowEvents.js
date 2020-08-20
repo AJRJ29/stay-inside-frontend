@@ -4,6 +4,8 @@ import NewComment from '../comments/NewComment'
 import ShowComment from '../comments/ShowComment'
 import DeleteEvent from '../events/DeleteEvent'
 import { Card } from 'react-bootstrap'
+import { Redirect } from 'react-router-dom';
+
 
 export default function ShowEvents(props) {
   let [events, setEvents] = useState([])

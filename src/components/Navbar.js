@@ -11,7 +11,6 @@ const Navbar = (props) => {
           <span className="navbar-toggler-icon">
           </span>
         </button>
-
         <div className="collapse navbar-collapse" id="navbarsExample07">
           <ul className="navbar-nav mr-auto">
             <li className="nav-item">
