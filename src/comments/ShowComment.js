@@ -36,8 +36,8 @@ export default function ShowComment(props) {
             <Card.Body className='p-1 m-0'>
               <h6>{comment.name}</h6> 
                 <p className='m-0 ml-2 p-1'>{comment.content}</p>  
-              <DeleteComment user={props.user} commentUser={comment.postedBy._id} id={comment._id} />
-              <UpdateDropDown user={props.user} commentUser={comment.postedBy._id} id={comment._id}/>
+              <DeleteComment user={props.user} commentUser={comment.postedBy.id} id={comment.id} />
+              <UpdateDropDown user={props.user} commentUser={comment.postedBy.id} id={comment.id}/>
             </Card.Body>
           </Card>
         </li>
