@@ -38,7 +38,7 @@ const Profile = (props) => {
               <ul>
                 {events.map((event, i) => (
                   <li className='profile-event-container'>
-                    <Card className="shadow-lg p-0 mb-5 bg-white" >
+                    <Card className="shadow-lg p-0 mb-5 " >
                       <Card.Header className='profile-event-title  p-1'>
                         <h5 className='profile-event-h2 m-2'>{event.title}</h5>
                         <DeleteEvent id={event._id}/>
