@@ -25,6 +25,11 @@ export default function About() {
                     <img className="aboutImg" src="https://ca.slack-edge.com/T0351JZQ0-UV0CS3TQF-6394ecdb9322-512" />
                     <h5>Project Manager, Git Master, Backend Developement</h5>
                 </div>
+                <div className="member">
+                    <h3>Salman Malik</h3>
+                    <img className="aboutImg" src="https://scontent-sea1-1.xx.fbcdn.net/v/t1.0-9/22228641_10213074701375363_901385773467128542_n.jpg?_nc_cat=108&_nc_sid=85a577&_nc_ohc=iUeA3vXuTCEAX9zqdjc&_nc_ht=scontent-sea1-1.xx&oh=370a8d3282a216e050594e123e8f1bb8&oe=5F662CE9" />
+                    <h5>The Secret Weapon</h5>
+                </div>
             </div>
         </div>
 
